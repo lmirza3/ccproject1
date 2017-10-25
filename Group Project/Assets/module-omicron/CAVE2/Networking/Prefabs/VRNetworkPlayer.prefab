@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &141528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 445654}
+  - component: {fileID: 11428154}
+  - component: {fileID: 11455752}
+  m_Layer: 0
+  m_Name: VRNetworkPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &445654
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11428154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: 870353891bb340e2b2a9c8707e7419ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 102
+    i1: 143
+    i2: 36
+    i3: 131
+    i4: 202
+    i5: 63
+    i6: 83
+    i7: 52
+    i8: 139
+    i9: 226
+    i10: 71
+    i11: 149
+    i12: 9
+    i13: 37
+    i14: 160
+    i15: 22
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
+--- !u!114 &11455752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 141528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82b7d92bad65c134a9a532395a8a509a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowLobbyGUI: 1
+  playerName: VRPlayer 0
+  playerType: VR
+  networkAddress: 
+  networkID: 0
+  characterLabelPrefab: {fileID: 159890, guid: e78d4b57713931748b383cd0d2dfa684, type: 2}
+  networkUpdateDelay: 0.01
+  localPlayer: 0
+  localPlayerControllerPrefab: {fileID: 113332, guid: dd3c3a5616a5a8b41ac7a954364ea96c,
+    type: 2}
+  headMarkerPrefab: {fileID: 143046, guid: 3177dfa559280d942be1381aedcf0f56, type: 2}
+  wandMarkerPrefab: {fileID: 163850, guid: 8ab9846cf8eac7840a579d4756d8002a, type: 2}
+  headMarker: {fileID: 0}
+  wandMarkers:
+  - {fileID: 0}
+  headPosition: {x: 0, y: 0, z: 0}
+  headRotation: {x: 0, y: 0, z: 0, w: 0}
+  playerPosition: {x: 0, y: 0, z: 0}
+  playerRotation: {x: 0, y: 0, z: 0, w: 0}
+  wandPosition: {x: 0, y: 0, z: 0}
+  wandRotation: {x: 0, y: 0, z: 0, w: 0}
+  cave2Client: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 141528}
+  m_IsPrefabParent: 1

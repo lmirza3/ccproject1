@@ -1,0 +1,155 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1000012836907430}
+  m_IsPrefabParent: 1
+--- !u!1 &1000012836907430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4000010062319522}
+  - component: {fileID: 114000013395474522}
+  - component: {fileID: 114000010765558800}
+  - component: {fileID: 114000011432808222}
+  - component: {fileID: 114000012740774028}
+  - component: {fileID: 114000012906187834}
+  m_Layer: 0
+  m_Name: CAVE2-Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4000010062319522
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010765558800
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4a8ed1f4be3ff4bac3e0d4d6147032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  head1MocapID: 0
+  wand1MocapID: 1
+  wand1ControllerID: 1
+  head2MocapID: 4
+  wand2MocapID: 2
+  wand2ControllerID: 2
+  mainCameraController: {fileID: 0}
+  simulatorMode: 1
+  mocapEmulation: 1
+  keyboardEventEmulation: 1
+  wandMousePointerEmulation: 1
+  usingKinectTrackingSimulator: 0
+  simulatorHeadPosition: {x: 0, y: 1.6, z: 0}
+  simulatorHeadRotation: {x: 0, y: 0, z: 0}
+  simulatorWandPosition: {x: 0.15, y: 1.5, z: 0.4}
+  simulatorWandRotation: {x: 0, y: 0, z: 0}
+  wandSimulatorAnalogUD: Vertical
+  wandSimulatorAnalogLR: Horizontal
+  wandSimulatorButton3: Fire1
+  wandSimulatorButton2: Fire2
+  wandSimulatorDPadUp: 273
+  wandSimulatorDPadDown: 274
+  wandSimulatorDPadLeft: 276
+  wandSimulatorDPadRight: 275
+  wandSimulatorButton5: 32
+  wandSimulatorButton6: Fire3
+  wandSimulatorButton7: 304
+  wandEmulationMode: 0
+  showDebugCanvas: 0
+  debugCanvas: {fileID: 0}
+--- !u!114 &114000011432808222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81f10d20df962b843b7ffe6e46b32026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axisSensitivity: 1
+  axisDeadzone: 0.2
+  wandTrackingOffset:
+  - {x: -0.007781088, y: -0.04959464, z: -0.07368752}
+--- !u!114 &114000012740774028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d875a4b988827a4b9575d7c06620706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headID: 1
+  headMovementSpeed: 1
+  headRotationSpeed: 50
+  wandID: 1
+  wandOffsetFollowsHead: 1
+  wandDefaultPositionOffset: {x: 0.15, y: 1.5, z: 0.4}
+  toggleMouseTracking: 9
+  mouseTrackingOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &114000012906187834
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af937c943915434f9738f08035c480e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cave2RPCCallCount: 0
+--- !u!114 &114000013395474522
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012836907430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a34fe77f5ff1b54a98ff1b3e2a74179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  connectToServer: 0
+  connectedToServer: 0
+  serverIP: localhost
+  serverMsgPort: 28000
+  dataPort: 7013
+  debug: 0
+  receivingDataFromMaster: 0
+  mouseTouchEmulation: 0
+  connectStatus: 0
+  statusCanvasText: {fileID: 0}
+  testTouchCanvas: {fileID: 0}
