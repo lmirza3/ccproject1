@@ -1,6 +1,5 @@
 ﻿#pragma strict
 private var green : Color = Color(0, 0.9, 0, 0.9);
-private var yellow : Color = Color(0.9, 0.9,0,0.9);
 var newMaterial : Material;
 var target : Collider;
 private var counter : int = 0;
