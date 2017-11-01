@@ -1,5 +1,6 @@
 ﻿#pragma strict
-private var orange : Color = Color(0.8, 0.4, 0.0, 0.7);
+private var green : Color = Color(0, 0.9, 0, 0.9);
+private var yellow : Color = Color(0.9, 0.9,0,0.9);
 var newMaterial : Material;
 var target : Collider;
 private var counter : int = 0;
@@ -10,6 +11,8 @@ function OnTriggerEnter(cubeTrigger : Collider)
 if (cubeTrigger == target)
 {
 
+GetComponent.<Renderer>().material.color = green;
+newMaterial.color = green;
 
 GetComponent.<AudioSource>().PlayOneShot(mySound);
 counter = counter + 1;
